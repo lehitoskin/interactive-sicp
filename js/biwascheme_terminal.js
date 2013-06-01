@@ -42,12 +42,11 @@ jQuery(document).ready(function($, undefined) {
                 });
             } catch(e) {
                 term.error(e.message);
-                throw(e);
             }
-            term.set_prompt('>');
+            term.set_prompt('> ');
             code_to_evaluate = '';
         } else {
-            term.set_prompt('...            ');
+            term.set_prompt('...   ');
             
         }
     }, {
@@ -56,7 +55,7 @@ jQuery(document).ready(function($, undefined) {
         height: 250,
         name: 'biwa',
         exit: false,
-        prompt: '>'
+        prompt: '> '
     });
 
     // run trace mode
