@@ -163,5 +163,8 @@ jQuery(document).ready(function($, undefined) {
         var result = args[1].split(args[0]);
         return result.to_list();
     });
+    bscheme.evaluate(' (define true #t)',function(){});
+    bscheme.evaluate(' (define false #f)',function(){});
+    bscheme.evaluate(' (define nil (quote ()))',function(){});
 
 });
