@@ -23,7 +23,17 @@ var pages = [
 (+ 2.7 10)<br />\
 12.7</code>\
 </pre>\
-        <p>Expressions such as these, formed by delimiting a list of expressions within parentheses in order to denote procedure application, are called combinations. The leftmost element in the list is called the operator, and the other elements are called operands. The value of a combination is obtained by applying the procedure specified by the operator to the arguments that are the values of the operands.</p>"}
+        <p>Expressions such as these, formed by delimiting a list of expressions within parentheses in order to denote procedure application, are called combinations. The leftmost element in the list is called the operator, and the other elements are called operands. The value of a combination is obtained by applying the procedure specified by the operator to the arguments that are the values of the operands.</p>"
+},
+{lesson: 3,
+    text: "<p> The convention of placing the operator to the left of the operands is known as <i>prefix notation</i>, and it may be somewhat confusing at first because it departs significantly from the customary mathematical convention. Prefix notation has several advantages, however. One of them is that it can accommodate procedures that may take an arbitrary number of arguments, as in the following examples:\
+<pre>(+ 21 35 12 7)<br />\
+75<br /><br />\
+(* 25 4 12)<br />\
+1200</code>\
+</pre>\
+       <p>No ambiguity can arise, because the operator is always the leftmost element and the entire combination is delimited by the parentheses.</p>"
+}
 ]
 $(document).ready(function(){
     var i = 0;
